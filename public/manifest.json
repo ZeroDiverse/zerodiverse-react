@@ -1,19 +1,19 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "ZeroDiverse",
+  "name": "ZeroDiverse - Who am I",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "https://zerodiverse.s3.eu-west-3.amazonaws.com/icons/favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "https://zerodiverse.s3.eu-west-3.amazonaws.com/icons/apple-touch-icon-180x180.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "https://zerodiverse.s3.eu-west-3.amazonaws.com/icons/apple-touch-icon-180x180.png",
       "type": "image/png",
       "sizes": "512x512"
     }

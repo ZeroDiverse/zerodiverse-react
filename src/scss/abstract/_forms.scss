@@ -1,0 +1,114 @@
+.form-group {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 0.85rem;
+    .form-group-inline{
+        margin-bottom: 0.85rem;
+    }
+    .form-group-inline:last-of-type{
+        margin-bottom: 0rem;
+    }
+    label {
+        display: block;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 24px;
+        /* identical to box height, or 200% */
+
+        text-align: start;
+        color: getColor(primaryWhite);
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        border: 0;
+        padding: 1rem;
+        font-size: 15px;
+        &:active, &:focus{
+            outline: none;
+        }
+    }
+
+    input{
+        height: 44px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        height: 2.75rem;
+        background: getColor(primaryWhite);
+        border-radius: 10px;
+    }
+
+    textarea {
+        height: 6rem;
+        background: getColor(primaryWhite);
+        border-radius: 10px;
+    }
+    /*
+    *{
+        &::placeholder{
+            font-family: 'OpenSans-Regular', 'Courier New', Courier, monospace, sans-serif;
+            font-size: 15px;
+        }
+    }
+    */
+}
+
+@media screen and (min-width: 1024px){
+    .form-group{
+        margin-bottom: 0;
+        
+        .form-group-inline{
+            margin-bottom: 0;
+        }
+        input[type="text"], input[type="email"]{
+            height: 2.3rem;
+        }
+        label{
+            font-size: 0.85rem;
+            line-height: 0px;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        textarea{
+            height: 7.3rem;
+        }
+    }
+
+    .inline{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 1920px){
+    .form-group{
+        margin-bottom: 0.85;
+
+        label{
+            font-size: 19px;
+            margin: 0 auto;
+            line-height: 48px;
+        }
+
+        input{
+            height: 44px;
+        }
+
+        input[type="text"], input[type="email"]{
+            height: 44px;
+        }
+
+        input,
+        textarea {
+            font-size: 19px;
+        }
+        textarea{
+            height: 8.3rem;
+        }
+    }
+}
