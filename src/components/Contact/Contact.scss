@@ -1,5 +1,8 @@
-@import '../../scss/abstract/colors';
-@import '../../scss/abstract/functions';
+@import '../../static/scss/fonts/fonts';
+@import '../..//static/scss/abstract/colors';
+@import '../..//static/scss/abstract/functions';
+@import '../..//static/scss/abstract/buttons';
+@import '../..//static/scss/abstract/forms';
 
 .contact-page {
     width: 100%;
@@ -7,7 +10,7 @@
         background: url("https://zerodiverse.s3.eu-west-3.amazonaws.com/webp/intro_bg.webp") no-repeat;
         background-size: cover;
         background-position: center;
-        min-height: 100vh;
+        height: 100%;
         width: 100%;
         padding-top: 5rem;
 
@@ -43,6 +46,18 @@
 
     footer {
         display: none;
+    }
+}
+
+@media screen and (min-height: 723px) {
+    .contact-page {
+        width: 100%;
+        main {
+            background: url("https://zerodiverse.s3.eu-west-3.amazonaws.com/webp/intro_bg.webp") no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
     }
 }
 
@@ -87,7 +102,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            max-height: 100vh;
+            //max-height: 100vh;
             .form {
                 width: 45%;
                 margin: auto;
