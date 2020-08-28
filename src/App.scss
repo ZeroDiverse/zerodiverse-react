@@ -1,6 +1,10 @@
-#root, .App, header{
+#root, .App{
     width: 100vw !important;
     height: 100%;
     margin: 0;
     padding: 0;
+}
+
+header{
+    width: 100vw !important;
 }

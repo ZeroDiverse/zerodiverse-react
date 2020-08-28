@@ -44,14 +44,13 @@
     footer {
         display: none;
     }
-
 }
 
 @media screen and (min-width: 1024px) {
     .contact-page {
         main {
             .form {
-                width: 70%;
+                width: 45%;
                 margin: auto;
                 margin-top: 2rem;
 
@@ -85,11 +84,14 @@
 @media screen and (min-width: 1920px) {
     .contact-page {
         main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             max-height: 100vh;
             .form {
-                width: 70%;
+                width: 45%;
                 margin: auto;
-                margin-top: 7rem;
+                //margin-top: 7rem;
 
                 form {
                     legend {

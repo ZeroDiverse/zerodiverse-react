@@ -133,7 +133,7 @@ nav {
             margin: auto;
             width: 100%;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-between !important;
             align-items: center;
             .navbrand{
                 position: static;
@@ -141,17 +141,17 @@ nav {
                 height: auto;
             }
             .btn-close{
-                display: none;
+                display: none !important;
             }
     
             .btn-open{
-                display: none;
+                display: none !important;
             }
             
             .navbar-main{
                 width: auto;
                 background-color: transparent;
-                position: static;
+                position: static !important;
                 height: auto;
                 align-items: center;
                 .navbar-nav{
