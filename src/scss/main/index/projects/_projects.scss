@@ -55,7 +55,9 @@ main {
                 border-radius: 1.75rem;
                 margin-bottom: 6px;
                 position: relative;
-
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 &:hover {
                     .project-content {
                         opacity: 1;
@@ -64,9 +66,9 @@ main {
 
                 .project-content {
                     position: absolute;
-                    width: 95%;
+                    width: 100%;
                     height: 100%;
-                    left: 2.55%;
+                    left: 0%;
                     top: 0%;
                     border-radius: 22px;
                     background: rgba(33, 46, 158, 0.6);
@@ -74,8 +76,6 @@ main {
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    padding-left: 2.25rem;
-                    padding-right: 2.25rem;
                     opacity: 0;
                     transition: all ease-out 0.6s;
 
@@ -93,9 +93,15 @@ main {
                         color: getColor(primaryWhite);
                     }
                 }
+                .project-main{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                }
 
                 img {
-                    width: 95%;
+                    width: 100%;
                     border-radius: 22px;
                 }
             }
@@ -152,12 +158,16 @@ main {
                         p {
                             font-size: 1rem;
                             text-align: start;
-                            line-height: 36px;
+                            line-height: 1.5rem;
                         }
                     }
                 }
 
                 .project-img {
+                    img{
+                        width: 100%;
+                    }
+
                     .project-content {
                         .project-description {
                             padding-left: 1rem;
@@ -174,6 +184,7 @@ main {
                 .projects {
                     display: grid;
                     grid-template-columns: repeat(3, 1fr);
+                    grid-gap: 6px;
                 }
             }
         }
@@ -212,7 +223,7 @@ main {
                         p {
                             font-size: 1.1875rem;
                             text-align: start;
-                            line-height: 36px;
+                            line-height: 2rem;
                         }
                     }
                 }

@@ -57,7 +57,7 @@ export default function Home() {
                             </div>
                             <div className="projects">
                                 <div className="project-img">
-                                    <div>
+                                    <div className="project-main">
                                         <img src="https://zerodiverse.s3.eu-west-3.amazonaws.com/webp/saint_giong.webp" alt="Thanh Giong AR" />
                                         <div className="project-content">
                                             <p className="project-title">ANDROID AR APP - THANH GIONG</p>
@@ -69,7 +69,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="project-img">
-                                    <div>
+                                    <div className="project-main">
                                         <img src="https://zerodiverse.s3.eu-west-3.amazonaws.com/webp/saint_giong.webp" alt="Thanh Giong AR" />
                                         <div className="project-content">
                                             <p className="project-title">ANDROID AR APP - THANH GIONG</p>
@@ -81,7 +81,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="project-img">
-                                    <div>
+                                    <div className="project-main">
                                         <img src="https://zerodiverse.s3.eu-west-3.amazonaws.com/webp/saint_giong.webp" alt="Thanh Giong AR" />
                                         <div className="project-content">
                                             <p className="project-title">ANDROID AR APP - THANH GIONG</p>
@@ -93,7 +93,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="project-img">
-                                    <div>
+                                    <div className="project-main">
                                         <img src="https://zerodiverse.s3.eu-west-3.amazonaws.com/webp/saint_giong.webp" alt="Thanh Giong AR" />
                                         <div className="project-content">
                                             <p className="project-title">ANDROID AR APP - THANH GIONG</p>
@@ -105,7 +105,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="project-img">
-                                    <div>
+                                    <div className="project-main">
                                         <img src="https://zerodiverse.s3.eu-west-3.amazonaws.com/webp/saint_giong.webp" alt="Thanh Giong AR" />
                                         <div className="project-content">
                                             <p className="project-title">ANDROID AR APP - THANH GIONG</p>
@@ -117,7 +117,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="project-img">
-                                    <div>
+                                    <div className="project-main">
                                         <img src="https://zerodiverse.s3.eu-west-3.amazonaws.com/webp/saint_giong.webp" alt="Thanh Giong AR" />
                                         <div className="project-content">
                                             <p className="project-title">ANDROID AR APP - THANH GIONG</p>
@@ -147,8 +147,8 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className="projects">
-                                <div className="project-img">
-                                    <div>
+                            <div className="project-img">
+                                    <div className="project-main">
                                         <img src="https://zerodiverse.s3.eu-west-3.amazonaws.com/webp/saint_giong.webp" alt="Thanh Giong AR" />
                                         <div className="project-content">
                                             <p className="project-title">ANDROID AR APP - THANH GIONG</p>
@@ -160,7 +160,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="project-img">
-                                    <div>
+                                    <div className="project-main">
                                         <img src="https://zerodiverse.s3.eu-west-3.amazonaws.com/webp/saint_giong.webp" alt="Thanh Giong AR" />
                                         <div className="project-content">
                                             <p className="project-title">ANDROID AR APP - THANH GIONG</p>
@@ -172,7 +172,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="project-img">
-                                    <div>
+                                    <div className="project-main">
                                         <img src="https://zerodiverse.s3.eu-west-3.amazonaws.com/webp/saint_giong.webp" alt="Thanh Giong AR" />
                                         <div className="project-content">
                                             <p className="project-title">ANDROID AR APP - THANH GIONG</p>
@@ -203,8 +203,8 @@ export default function Home() {
                             </div>
 
                             <div className="projects">
-                                <div className="project-img">
-                                    <div>
+                            <div className="project-img">
+                                    <div className="project-main">
                                         <img src="https://zerodiverse.s3.eu-west-3.amazonaws.com/webp/saint_giong.webp" alt="Thanh Giong AR" />
                                         <div className="project-content">
                                             <p className="project-title">ANDROID AR APP - THANH GIONG</p>
@@ -216,7 +216,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="project-img">
-                                    <div>
+                                    <div className="project-main">
                                         <img src="https://zerodiverse.s3.eu-west-3.amazonaws.com/webp/saint_giong.webp" alt="Thanh Giong AR" />
                                         <div className="project-content">
                                             <p className="project-title">ANDROID AR APP - THANH GIONG</p>
@@ -228,7 +228,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="project-img">
-                                    <div>
+                                    <div className="project-main">
                                         <img src="https://zerodiverse.s3.eu-west-3.amazonaws.com/webp/saint_giong.webp" alt="Thanh Giong AR" />
                                         <div className="project-content">
                                             <p className="project-title">ANDROID AR APP - THANH GIONG</p>
