@@ -20,7 +20,7 @@ export default function Home() {
             rootMargin
         })
         if (node) observer.current.observe(node)
-    }, [isScrollDown])
+    }, [])
 
     return (
         <div>
