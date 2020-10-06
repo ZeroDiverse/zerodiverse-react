@@ -1,8 +1,8 @@
 @import '../../static/scss/fonts/fonts';
-@import '../..//static/scss/abstract/colors';
-@import '../..//static/scss/abstract/functions';
-@import '../..//static/scss/abstract/buttons';
-@import '../..//static/scss/abstract/forms';
+@import '../../static/scss/abstract/colors';
+@import '../../static/scss/abstract/functions';
+@import '../../static/scss/abstract/buttons';
+@import '../../static/scss/abstract/forms';
 
 .alert-success {
     position: fixed;
@@ -49,15 +49,13 @@
     width: 100%;
 
     main {
-        background: url("https://zerodiverse.s3.eu-west-3.amazonaws.com/webp/intro_bg.webp") no-repeat;
         background-size: cover;
-        background-position: center;
+        background: url(../../images/intro_bg.webp) no-repeat center;
         min-height: 100%;
         height: 100vh;
         width: 100%;
         padding-top: 6rem;
         overflow-y: hidden;
-
         .form {
             form {
                 display: flex;

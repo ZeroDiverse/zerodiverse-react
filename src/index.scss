@@ -1,12 +1,14 @@
 @import './static/scss/fonts/fonts';
 @import './static/scss/abstract/colors';
 @import './static/scss/abstract/functions';
-@import './static/scss/footer/footer';
 
 *{
   box-sizing: border-box;
 }
 
+.opacity-30 {
+  opacity: 0.3;
+}
 
 body, html{
   width: 100%;
