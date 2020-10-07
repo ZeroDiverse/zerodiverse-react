@@ -1,8 +1,11 @@
 import React from 'react';
 import './Navbar.scss';
 import {Link} from 'react-router-dom';
+import {withTranslation} from 'react-i18next';
 
 const Navbar = (props) => {
+    const { t } = props;
+
     return (
         <nav>
             <div className="navbrand">
@@ -57,12 +60,12 @@ const Navbar = (props) => {
             </div>
             <div className={props.menuOpen ? "navbar-main w-80" : "navbar-main"}>
                 <ul className="navbar-nav">
-                    <li><Link to="/#projects">Projects</Link></li>
-                    <li><Link to="/#skills">Skills</Link></li>
-                    <li><Link to="/#about">About</Link></li>
-                    <li><Link to="/resume">Resume</Link></li>
+                    <li><a href="/#projects">{t("Projects")}</a></li>
+                    <li><a href="/#skills">{t("Skills")}</a></li>
+                    <li><a href="/#about">{t("About")}</a></li>
+                    <li><a href="/resume.pdf">{t("Resume")}</a></li>
                     <Link to="/contact">
-                        <li className="primary">Contact</li>
+                        <li className="primary">{t("Contact")}</li>
                     </Link>
                 </ul>
             </div>
@@ -71,4 +74,4 @@ const Navbar = (props) => {
 }
 
 
-export default Navbar;
+export default withTranslation('translations')(Navbar);

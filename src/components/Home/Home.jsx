@@ -1,13 +1,15 @@
-import React, {Suspense, useCallback, useRef, useState} from 'react'
+import React, {useCallback, useRef, useState} from 'react'
 import './Home.scss';
 
-const Projects = React.lazy(() => import('./Projects'));
-const Skills = React.lazy(() => import('./Skills'));
-const About = React.lazy(() => import('./About'));
-const Footer = React.lazy(() => import('../Footer/Footer'));
+import Projects from './Projects'
+import Skills from './Skills'
+import About from "./About";
+import Footer from "../Footer/Footer";
+import {withTranslation} from 'react-i18next';
 
+function Home(props) {
+    const { t } = props;
 
-export default function Home(props) {
     const observer = useRef()
     const rootMargin = '0px';
     const [isScrollDown, setIsScrollDown] = useState(false)
@@ -37,29 +39,20 @@ export default function Home(props) {
             <main role="main">
                 <section className="introduction-section" id="introduction">
                     <div className="intro-main">
-                        <h1>HI I'M ZERO DIVERSE.</h1>
+                        <h1>{t("HI I'M ZERO DIVERSE.")}</h1>
                         <p>
-                            I am an Android - Full-stack passionate developer lived in Lille, France.</p>
-                        <p>I love learning programming languages, programming, and work in a team.</p>
+                            {t("I am an Android - Full-stack passionate developer lived in Lille, France.")}</p>
+                        <p>{t("I love learning programming languages, new technologies, and work in a team.")}</p>
                     </div>
                 </section>
                 <div ref={scrollRef}>
-                    <Suspense fallback={<div>Loading...</div>}>
-                        <Projects/>
-                    </Suspense>
-                    <Suspense fallback={<div>Loading...</div>}>
-                        <Skills/>
-                    </Suspense>
-                    <Suspense fallback={<div>Loading...</div>}>
-                        <About/>
-                    </Suspense>
+                    <Projects/>
+                    <Skills/>
+                    <About/>
                 </div>
             </main>
-
-            <Suspense fallback={<div>Loading...</div>}>
-                <Footer/>
-            </Suspense>
-            <a href="#introduction">
+            <Footer/>
+            <a href="#introduction" aria-label={"Intro"}>
                 <div className={!isScrollDown ? "down-arrow" : "down-arrow visible-o1"}>
                     <svg width="22" height="13" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -72,3 +65,4 @@ export default function Home(props) {
     )
 }
 
+export default withTranslation('translations')(Home);
