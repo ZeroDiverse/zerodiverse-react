@@ -40,8 +40,7 @@ function Home(props) {
                 <section className="introduction-section" id="introduction">
                     <div className="intro-main">
                         <h1>{t("HI I'M ZERO DIVERSE.")}</h1>
-                        <p>
-                            {t("I am an Android - Full-stack passionate developer lived in Lille, France.")}</p>
+                        <p>{t("I am an student, Mobile - Backend developer lived in Lille, France.")}</p>
                         <p>{t("I love learning programming languages, new technologies, and work in a team.")}</p>
                     </div>
                 </section>

@@ -1,18 +1,20 @@
 import React from 'react'
 import {Link} from "react-router-dom";
 import './Footer.scss'
+import {withTranslation} from 'react-i18next';
 
-export default function Footer(){
+
+function Footer(props){
+
+    const { t } = props;
+
     return(
         <footer>
             <section className="collab-section" id="collab">
                 <h2>
-                    Collaborating?
+                    {t('Collaborating')}?
                 </h2>
-                <p>
-                    If you have a project that you want to get started, think you need my help with something or
-                    just fancy saying
-                    hey, then get in touch. </p>
+                <p>{t('If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.')}</p>
                 <Link to="/contact">
                     <button className="btn btn-primary">
                         CONTACT
@@ -21,7 +23,7 @@ export default function Footer(){
             </section>
             <div>
                 <h3>
-                    “Technology is best when it brings people together”
+                    “{t('Technology is best when it brings people together')}”
                 </h3>
             </div>
             <div className="footer-socials">
@@ -79,9 +81,11 @@ export default function Footer(){
                 </ul>
             </div>
             <div className="footer-copyright">
-                <p>Handcrafted by me Ⓒ Zero</p>
-                <p>Powered by SCSS </p>
+                <p>Ⓒ Zero</p>
+                <p>{t('Powered by SCSS')}</p>
             </div>
         </footer>
     )
 }
+
+export default withTranslation("translations")(Footer)

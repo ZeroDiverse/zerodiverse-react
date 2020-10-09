@@ -5,14 +5,15 @@ import dev from '../../images/dev.webm'
 import www from '../../images/www.webm'
 
 import './Projects.scss'
+import {withTranslation, Trans} from "react-i18next";
 
-export default function Projects() {
+function Projects() {
     return (
         <section className="projects-section" id="projects">
             <div className="section-intro">
-                <h2>MY PROJECTS</h2>
-                <h3>My Recent Work Here are a few projects I've worked on recently. Want to see more? EMAIL
-                    ME</h3>
+                <h2><Trans>My projects</Trans></h2>
+                <h3><Trans>My Recent Work Here are a few projects I've worked on recently. Want to see more?</Trans> <a style={{color: "#207BE6"}} href="mailto:minhquan.nguyen.etu@univ-lille.fr"><Trans>EMAIL
+                    ME</Trans></a></h3>
             </div>
             <article className="project">
                 <div className="project-intro">
@@ -22,7 +23,7 @@ export default function Projects() {
                         </video>
                     </div>
                     <div className="description">
-                        <h3 className="desc">ANDROID PROJECTS</h3>
+                        <h3 className="desc"><Trans>Android projects</Trans></h3>
                         <p>
                             Android project based on freeCodeCamp web project, help people finding weather
                             in the local position or
@@ -128,7 +129,7 @@ export default function Projects() {
                         </video>
                     </div>
                     <div className="description">
-                        <h3 className="desc">WEB FRONTEND PROJECTS</h3>
+                        <h3 className="desc"><Trans>Web frontend projects</Trans></h3>
                         <p>
                             Android project based on freeCodeCamp web project, help people finding weather
                             in the local position or
@@ -192,7 +193,7 @@ export default function Projects() {
                         </video>
                     </div>
                     <div className="description">
-                        <h3 className="desc">WEB APPLICATION PROJECTS</h3>
+                        <h3 className="desc"><Trans>Web application projects</Trans></h3>
                         <p>
                             Android project based on freeCodeCamp web project, help people finding weather
                             in the local position or
@@ -252,3 +253,5 @@ export default function Projects() {
         </section>
     )
 }
+
+export default withTranslation('translations')(Projects)

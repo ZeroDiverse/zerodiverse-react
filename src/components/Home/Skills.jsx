@@ -3,14 +3,15 @@ import './Skills.scss'
 import browser from '../../images/browser.webm'
 import code from '../../images/code.webm'
 import mobile from '../../images/mobile.webm'
+import {withTranslation, Trans} from 'react-i18next'
 
-export default function Skills() {
+function Skills() {
 
     return (
         <section className="skills-section" id="skills">
             <div className="section-intro">
                 <h2>
-                    SKILLS
+                    <Trans>Skills</Trans>
                 </h2>
             </div>
             <article className="skills">
@@ -19,11 +20,11 @@ export default function Skills() {
                         <source src={browser}/>
                     </video>
                     <h3 className="skill-title">
-                        FRONTEND DEVELOPER
+                        <Trans>Frontend Developer</Trans>
                     </h3>
                     <div className="skill-language">
                         <p className="h4">
-                            LANGUAGE I SPEAK
+                            <Trans>Language i speak</Trans>
                         </p>
                         <p className="language">
                             HTML5, CSS3, JS, SCSS, Angular^7, VUEJS
@@ -31,7 +32,7 @@ export default function Skills() {
                     </div>
                     <div className="skill-tools">
                         <p className="h4">
-                            DEV TOOLS
+                            <Trans>Dev tools</Trans>
                         </p>
                         <ul>
                             <li>Visual Studio Code</li>
@@ -46,11 +47,11 @@ export default function Skills() {
                         <source src={code}/>
                     </video>
                     <h3 className="skill-title">
-                        Backend Developer
+                        <Trans>Backend Developer</Trans>
                     </h3>
                     <div className="skill-language">
                         <p className="h4">
-                            LANGUAGE I SPEAK
+                            <Trans>Language i speak</Trans>
                         </p>
                         <p className="language">
                             HTML5, CSS3, JS, SCSS, Angular^7, ReactJS
@@ -58,7 +59,7 @@ export default function Skills() {
                     </div>
                     <div className="skill-tools">
                         <p className="h4">
-                            DEV TOOLS
+                            <Trans>Dev tools</Trans>
                         </p>
                         <ul>
                             <li>Visual Studio Code</li>
@@ -73,11 +74,11 @@ export default function Skills() {
                         <source src={mobile}/>
                     </video>
                     <h3 className="skill-title">
-                        Mobile Developer
+                        <Trans>Mobile Developer</Trans>
                     </h3>
                     <div className="skill-language">
                         <p className="h4">
-                            LANGUAGE I SPEAK
+                            <Trans>Language i speak</Trans>
                         </p>
                         <p className="language">
                             HTML5, CSS3, JS, SCSS, Angular^7, VUEJS
@@ -85,7 +86,7 @@ export default function Skills() {
                     </div>
                     <div className="skill-tools">
                         <p className="h4">
-                            DEV TOOLS
+                            <Trans>Dev tools</Trans>
                         </p>
                         <ul>
                             <li>Visual Studio Code</li>
@@ -101,3 +102,4 @@ export default function Skills() {
     )
 }
 
+export default withTranslation('translations')(Skills)

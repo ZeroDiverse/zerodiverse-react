@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import {withTranslation} from 'react-i18next';
 
 const Navbar = (props) => {
-    const { t } = props;
+    const {t} = props;
 
     return (
         <nav>
@@ -58,15 +58,15 @@ const Navbar = (props) => {
                 </svg>
 
             </div>
-            <div className={props.menuOpen ? "navbar-main w-80" : "navbar-main"}>
+            <div className={props.menuOpen ? "navbar-main w-80" : "navbar-main visibility-hidden"}>
                 <ul className="navbar-nav">
                     <li><a href="/#projects">{t("Projects")}</a></li>
                     <li><a href="/#skills">{t("Skills")}</a></li>
                     <li><a href="/#about">{t("About")}</a></li>
                     <li><a href="/resume.pdf">{t("Resume")}</a></li>
-                    <Link to="/contact">
-                        <li className="primary">{t("Contact")}</li>
-                    </Link>
+                    <li id={"button"}><Link to="/contact">
+                        <div className="primary">{t("Contact")}</div>
+                    </Link></li>
                 </ul>
             </div>
         </nav>

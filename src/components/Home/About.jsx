@@ -1,8 +1,9 @@
 import React from 'react'
 import './About.scss'
 import pc from '../../images/pc.webm'
+import {withTranslation, Trans} from 'react-i18next'
 
-export default function About(){
+function About(){
     return(
         <section className="about-section" id="about">
             <div className="section-intro">
@@ -11,19 +12,15 @@ export default function About(){
                 </video>
             </div>
             <div className="section-main">
-                <h2>More about me</h2>
+                <h2><Trans>More about me</Trans></h2>
                 <p>
-                    I'm a student from Licence 3 at University of Lille. Also i'm the co-founder of T.
-                    Rostrum Networks. I come
-                    from Hanoi, Vietnam and i want to become an application developer ( Web Application and
-                    Mobile Application).
-                    I've done many personal projects but i never had a professional experience. And i'm
-                    still currently looking
-                    for it ! And here's another thing, i love helping people with their projects.
-                    Collaboration or answer their
-                    question, because it's the best way to learn new things for me.
+                    <Trans>
+                        I'm a student from Licence 3 Computer Science at University of Lille and also the Co-Creator of Trostrum Networks. I come from Hanoi, Vietnam and i want to become an software developer/engineering. And i'm am looking for my first professional experience in France ! And here's another thing, i love helping people with their projects. Answering and solving their questions, because it's the best way to learn new stuffs for me.
+                    </Trans>
                 </p>
             </div>
         </section>
     )
 }
+
+export default withTranslation('translations')(About)

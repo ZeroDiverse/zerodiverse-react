@@ -84,7 +84,7 @@ footer {
 }
 
 footer {
-  background: url(../../images/bg_footer.webp) no-repeat center;
+  background: url(../../images/bg_footer.webp), #207BE6 no-repeat center;
   background-size: cover;
   position: relative;
   //height: 37.5rem;
@@ -99,13 +99,12 @@ footer {
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
-    line-height: 24px;
+    line-height: initial;
     /* or 160% */
     width: 80%;
-    margin: auto;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 3.5rem;
+    margin: auto auto 3.5rem;
     color: #FFFFFF;
 
     mix-blend-mode: normal;
@@ -114,8 +113,7 @@ footer {
 
   .footer-socials {
     width: 80%;
-    margin: auto;
-    margin-bottom: 3.5rem;
+    margin: auto auto 3.5rem;
 
     .footer-socials_links {
       display: flex;
@@ -124,14 +122,9 @@ footer {
       margin: 0;
 
       .footer-socials_link {
-        margin: 2rem 0px;
-        margin-right: 2rem;
+        margin: 2rem 2rem 2rem 0px;
 
         &:hover {
-
-          //animation: rotate 2s linear;
-          //animation-fill-mode: forwards;
-          //animation-iteration-count: infinite;
           svg path {
             transition: all 0.6s ease-out;
             fill: #bdcff2;
@@ -149,7 +142,6 @@ footer {
 
     p {
       color: getColor(primaryWhite);
-      //line-height: 17px;
       margin: 0rem;
       font-size: 9px;
     }

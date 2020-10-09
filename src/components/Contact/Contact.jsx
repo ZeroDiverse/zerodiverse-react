@@ -18,6 +18,11 @@ export default function Contact(props) {
         }).then(() => {
             console.log('Message successfully sent');
             setSuccessful(true);
+            setEmail("")
+            setFirstname("")
+            setLastname("")
+            setMessage("")
+            setSubject("")
             setTimeout(() => {
                 setSuccessful(false);
             }, 2000);
@@ -70,7 +75,7 @@ export default function Contact(props) {
                         <div className="form-group" style={{marginBottom: '0rem'}}>
                             <label htmlFor="message">Subject*</label>
                             <textarea id="message" name="message" required onChange={e => setMessage(e.target.value)}
-                                      defaultValue={message}></textarea>
+     value={message}/>
                         </div>
                         <div>
                             <button className="btn btn-primary" onSubmit={sendContact}>SEND</button>

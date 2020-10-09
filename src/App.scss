@@ -9,3 +9,9 @@
 header{
     width: 100vw !important;
 }
+
+@media screen and (min-width: 1024px){
+    .opacity-30{
+        opacity: 1;
+    }
+}
