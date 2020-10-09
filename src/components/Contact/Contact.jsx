@@ -1,9 +1,10 @@
 import React, {useState} from 'react'
 import './Contact.scss'
 import axios from 'axios'
+import {withTranslation, Trans} from 'react-i18next'
 
 
-export default function Contact(props) {
+function Contact(props) {
     const [firstname, setFirstname] = useState("");
     const [lastname, setLastname] = useState("");
     const [email, setEmail] = useState("");
@@ -43,42 +44,42 @@ export default function Contact(props) {
             <main role="main">
                 {successful &&
                 <div className="alert-success">
-                    <p>You message was sent successfully! </p>
+                    <p><Trans>You message was sent successfully!</Trans></p>
                 </div>
                 }
 
                 <div className="form">
                     <form onSubmit={sendContact}>
-                        <legend>Thanks for CONTACTING ME!</legend>
+                        <legend><Trans>Thanks for CONTACTING ME!</Trans></legend>
                         <div className="form-group inline">
                             <div className="form-group-inline">
-                                <label htmlFor="firstname">Firstname*</label>
+                                <label htmlFor="firstname"><Trans>Firstname</Trans>*</label>
                                 <input type="text" id="firstname" onChange={e => setFirstname(e.target.value)}
                                        name="firstname" value={firstname}/>
                             </div>
                             <div className="form-group-inline">
-                                <label htmlFor="lastname">Lastname*</label>
+                                <label htmlFor="lastname"><Trans>Lastname</Trans>*</label>
                                 <input type="text" id="lastname" onChange={e => setLastname(e.target.value)}
                                        name="lastname" value={lastname}/>
                             </div>
                         </div>
                         <div className="form-group">
-                            <label htmlFor="email">Email*</label>
+                            <label htmlFor="email"><Trans>Email</Trans>*</label>
                             <input type="email" id="email" name="email" onChange={e => setEmail(e.target.value)}
                                    value={email}/>
                         </div>
                         <div className="form-group">
-                            <label htmlFor="subject">Subject*</label>
+                            <label htmlFor="subject"><Trans>Subject</Trans>*</label>
                             <input type="text" id="subject" name="subject" onChange={e => setSubject(e.target.value)}
                                    value={subject}/>
                         </div>
                         <div className="form-group" style={{marginBottom: '0rem'}}>
-                            <label htmlFor="message">Subject*</label>
+                            <label htmlFor="message"><Trans>Message</Trans>*</label>
                             <textarea id="message" name="message" required onChange={e => setMessage(e.target.value)}
      value={message}/>
                         </div>
                         <div>
-                            <button className="btn btn-primary" onSubmit={sendContact}>SEND</button>
+                            <button className="btn btn-primary" onSubmit={sendContact}><Trans>Send</Trans></button>
                         </div>
                     </form>
                 </div>
@@ -90,3 +91,4 @@ export default function Contact(props) {
     )
 }
 
+export default withTranslation('translations')(Contact)

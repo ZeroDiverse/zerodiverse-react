@@ -1,5 +1,5 @@
 import i18n from 'i18next';
-import {initReactI18next} from "react-i18next";
+import {initReactI18next, Trans} from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
 
 i18n
@@ -35,7 +35,15 @@ i18n
                     "Technology is best when it brings people together": "Technology is best when it brings people together",
                     "Powered by SCSS": "Powered by SCSS",
                     "My Recent Work Here are a few projects I've worked on recently. Want to see more?": "My Recent Work Here are a few projects I've worked on recently. Want to see more?",
-                    "EMAIL ME": "EMAIL ME"
+                    "EMAIL ME": "EMAIL ME",
+                    "You message was sent successfully!": "You message was sent successfully!",
+                    "Thanks for CONTACTING ME!": "Thanks for CONTACTING ME!",
+                    "Firstname": "Firstname",
+                    "Lastname": "Lastname",
+                    "Email": "Email",
+                    "Subject": "Subject",
+                    "Message": "Message",
+                    "Send": "Send"
                 }
             },
             fr: {
@@ -65,7 +73,15 @@ i18n
                     "Technology is best when it brings people together": "Informatique : Alliance d'une science inexacte et d'une activité humaine faillible.",
                     "Powered by SCSS": "Fabriqué en SCSS",
                     "My Recent Work Here are a few projects I've worked on recently. Want to see more?": "Mes travails - Ici ce sont quelques projets que je faire récemment.",
-                    "EMAIL ME": "Envoyez-moi un email si vous voulez regarder plus."
+                    "EMAIL ME": "Envoyez-moi un email si vous voulez regarder plus.",
+                    "You message was sent successfully!": "Votre message a été bien envoyé! Merci beaucoup!",
+                    "Thanks for CONTACTING ME!": "Merci pour ME CONTACTER",
+                    "Firstname": "Prénom",
+                    "Lastname": "Nom",
+                    "Email": "Email",
+                    "Subject": "Sujet",
+                    "Message": "Message",
+                    "Send": "Envoyez"
                 }
             }
         },
