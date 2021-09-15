@@ -11,6 +11,7 @@
     right: 0rem;
     width: 90%;
     height: 6rem;
+    text-align: center;
     max-width: 840px;
     margin: auto;
     background-color: white;
@@ -47,17 +48,20 @@
 .contact-page {
     min-height: 100%;
     width: 100%;
-
     main {
+        background: url(../../images/intro_bg.webp), #207BE6 no-repeat center;
         background-size: cover;
-        background: url(../../images/intro_bg.webp) no-repeat center;
-        min-height: 100%;
-        height: 100vh;
+        min-height: 100vh;
         width: 100%;
-        padding-top: 6rem;
         overflow-y: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .form {
+            width: 100%;
             form {
+                margin-top: 6rem;
+                margin-bottom: 6rem;
                 display: flex;
                 flex-direction: column;
                 justify-items: center;
@@ -96,10 +100,9 @@
         width: 100%;
 
         main {
-            background: url("https://zerodiverse.s3.eu-west-3.amazonaws.com/webp/intro_bg.webp") no-repeat;
+            background: url(../../images/intro_bg.webp), #207BE6 no-repeat center;
             background-size: cover;
-            background-position: center;
-            height: 100vh;
+            min-height: 100vh;
         }
     }
 }
@@ -109,8 +112,7 @@
         main {
             .form {
                 width: 45%;
-                margin: auto;
-                margin-top: 2rem;
+                margin: 2rem auto auto;
 
                 form {
                     legend {
@@ -125,6 +127,7 @@
                         height: 2.5rem;
                         margin-top: 1.5rem;
                         width: 8rem;
+                        width: auto;
                         font-size: 1rem;
                         margin-bottom: 0;
 

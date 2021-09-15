@@ -1,5 +1,5 @@
 import i18n from 'i18next';
-import {initReactI18next, Trans} from "react-i18next";
+import {initReactI18next} from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
 
 i18n
@@ -8,7 +8,7 @@ i18n
     .init({
         // we init with resources
         resources:
-            {
+        {
             en: {
                 translations: {
                     "Projects": "Projects",
@@ -85,7 +85,7 @@ i18n
                 }
             }
         },
-        fallbackLng: 'fr',
+        fallbackLng: 'en',
         debug: true,
 
         // have a common namespace used around the full app

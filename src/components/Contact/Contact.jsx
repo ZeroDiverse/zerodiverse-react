@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import './Contact.scss'
 import axios from 'axios'
-import {withTranslation, Trans} from 'react-i18next'
+import {Trans, withTranslation} from 'react-i18next'
+import i18n from 'i18next';
 
 
 function Contact(props) {
@@ -11,11 +12,19 @@ function Contact(props) {
     const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
     const [successful, setSuccessful] = useState(false);
-
+    const URI = 'https://sleepy-inlet-57360.herokuapp.com/contact/'
+    //const URI = 'http://localhost:4000/contact'
     const sendContact = (e) => {
         e.preventDefault();
-        axios.post('https://zerodiverse.oa.r.appspot.com/contact/', {
-            firstname, lastname, email, subject, message
+        const language =  i18n.language ||
+            (typeof window !== 'undefined' && window.localStorage.i18nextLng) ||
+            'en';
+        //console.log(language)
+        axios.post(`${URI}`, {
+            data: {
+                firstname, lastname, email, subject, message
+            },
+            lang: language
         }).then(() => {
             console.log('Message successfully sent');
             setSuccessful(true);
@@ -37,6 +46,7 @@ function Contact(props) {
             props.onMenuOpen()
         }
     }
+
 
 
     return (

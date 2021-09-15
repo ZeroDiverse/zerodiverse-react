@@ -60,11 +60,11 @@ const Navbar = (props) => {
             </div>
             <div className={props.menuOpen ? "navbar-main w-80" : "navbar-main visibility-hidden"}>
                 <ul className="navbar-nav">
-                    <li><a href="/#projects">{t("Projects")}</a></li>
-                    <li><a href="/#skills">{t("Skills")}</a></li>
-                    <li><a href="/#about">{t("About")}</a></li>
-                    <li><a href="/resume.pdf">{t("Resume")}</a></li>
-                    <li id={"button"}><Link to="/contact">
+                    <li><a href="/#projects" onClick={props.onMenuOpen}>{t("Projects")}</a></li>
+                    <li><a href="/#skills" onClick={props.onMenuOpen}>{t("Skills")}</a></li>
+                    <li><a href="/#about" onClick={props.onMenuOpen}>{t("About")}</a></li>
+                    <li><a href="/resume.pdf" onClick={props.onMenuOpen}>{t("Resume")}</a></li>
+                    <li id={"button"}><Link to="/contact" onClick={props.onMenuOpen}>
                         <div className="primary">{t("Contact")}</div>
                     </Link></li>
                 </ul>
